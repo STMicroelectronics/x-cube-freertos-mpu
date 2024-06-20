@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Release Notes for X-CUBE-FREERTOS-MPU Component or Package</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="_htmresc/mini-st_2020.css" />
+  <link rel="icon" type="image/x-icon" href="_htmresc/favicon.png" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div class="row">
+<div class="col-sm-12 col-lg-4">
+<center>
+<h1 id="release-notes-for-x-cube-freertos">Release Notes for
+X-CUBE-FREERTOS-MPU</h1>
+<p>Copyright © 2024 STMicroelectronics<br />
+</p>
+<a href="https://www.st.com" class="logo"><img
+src="_htmresc/st_logo_2020.png" alt="ST logo" /></a>
+</center>
+<h1 id="purpose">Purpose</h1>
+<p>With FreeRTOS complementing the extensive STM32Cube ecosystem
+providing free development tools, software bricks, and software
+expansion packages, STM32 users can also leverage the rich services of
+FreeRTOS which meet the needs of tiny, smart, connected devices.</p>
+<p><strong>X-CUBE-FREERTOS</strong> (FreeRTOS Software Expansion for
+STM32Cube) provides a full integration of <strong>FreeRTOS</strong> in
+the STM32Cube environment for the STMCubeMP13 series of microprocessors. 
+Ready-to-run applicative examples are also provided for the <em>
+STM32MP135F-DK</em> thus <strong>reducing the learning curve</strong> 
+and ensuring a <strong>smooth application development experience</strong> with FreeRTOS and STM32CUBEMP13 MPUs.</p>
+<p><img src="_htmresc/OverviewFreeRTOS_in_STM32Cube.png" /></p>
+<h1 id="repository-structure">Repository structure</h1>
+<p>The STMicroelectronics X-CUBE-FREERTOS repository consists of the
+following repositories:</p>
+<ul>
+<li><strong>Drivers</strong>: contains STM32CUBEMP13 CMSIS and HAL drivers.</li>
+<li><strong>Middlewares</strong>: contains FreeRTOS Middleware files.</li>
+<li><strong>Projects</strong>: provides ready-to-run applicative
+examples for FreeRTOS on the supported boards. Projects are structured
+as follows:</li>
+</ul>
+<p><img src="_htmresc/FreeRTOS_Project_Structure.png" /></p>
+<h1 id="documentation">Documentation</h1>
+<p>More comprehensive documentation is available on FreeRTOS <a
+href="https://freertos.org/Documentation/RTOS_book.html">FreeRTOS
+documentation</a>.</p>
+</div>
+<section id="update-history" class="col-sm-12 col-lg-8">
+<h2><strong>Update History</strong></h2>
+
+
+<div class="collapse">
+<input type="checkbox" id="collapse-section1" checked aria-hidden="true">
+<label for="collapse-section1" aria-hidden="true"><strong>V1.0.0 /
+21-June-2024</strong></label>
+<div>
+<h2 id="main-changes-2">Main changes</h2>
+<ul>
+<li>First official release of <strong>X-CUBE-FREERTOS-MPU</strong> V1.0.0
+package supporting STM32MP13 </li>
+</ul>
+<h2 id="contents-2">Contents</h2>
+<h3 id="applications-2">Applications</h3>
+<p>Provide ready-to-run applicative examples for FreeRTOS on the
+supported boards. For detailed list refer to <a
+href="Projects/X-CUBE-FREERTOS_ProjectsList.html">applications
+list</a></p>
+<h3 id="drivers-2">Drivers</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: center;">Version</th>
+<th style="text-align: center;">Release note</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Cortex-A CMSIS</td>
+<td style="text-align: center;">v5.8.0</td>
+<td style="text-align: center;"><a
+href="https://www.keil.com/pack/doc/CMSIS/General/html/index.html">release
+notes</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">STM32MP13xx CMSIS</td>
+<td style="text-align: center;">v1.1.0</td>
+<td style="text-align: center;"><a
+href="Drivers/CMSIS/Device/ST/STM32MP13xx/Release_Notes.html">release
+notes</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">STM32MP13xx HAL</td>
+<td style="text-align: center;">v1.1.0</td>
+<td style="text-align: center;"><a
+href="Drivers/STM32MP13xx_HAL_Driver/Release_Notes.html">release
+notes</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">BSP STM32MP13xx DISCO</td>
+<td style="text-align: center;">v1.1.0</td>
+<td style="text-align: center;"><a
+href="Drivers/BSP/STM32MP13xx_DISCO/Release_Notes.html">release
+notes</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">BSP mcp23x17</td>
+<td style="text-align: center;">v1.0.1</td>
+<td style="text-align: center;"><a
+href="Drivers/BSP/Components/mcp23x17/Release_Notes.html">release
+notes</a></td>
+</tr>
+
+</tbody>
+</table>
+<h3 id="middlewares-2">Middlewares</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Version</th>
+<th style="text-align: left;">Release note</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">FreeRTOS</td>
+<td style="text-align: left;">10.5.1 </td>
+<td style="text-align: left;"><a
+href="https://github.com/FreeRTOS/FreeRTOS-Kernel/tree/V10.5.1">release
+notes</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="known-limitations-2">Known limitations</h2>
+<ul>
+<li> Example generation in CubeMX not yet supported. </li>
+</ul></li>
+</ul>
+<h2 id="development-toolchains-and-compilers-2">Development toolchains
+and compilers</h2>
+<ul>
+<li>IAR Embedded Workbench for ARM (EWARM) toolchain toolchain 9.50.1 + ST-LINKV3.
+</li>
+
+<li><a
+href="https://www.st.com/en/development-tools/stm32cubeide.html">STM32CubeIDE
+V1.15.0</a> + ST-LINKV3</li>
+
+</ul>
+<h2 id="supported-devices-and-boards-by-applications-2">Supported
+devices and boards by applications</h2>
+<ul>
+<li><a
+href="https://www.st.com/en/evaluation-tools/stm32mp135f-dk.html">STM32MP135F-DK</a>
+</li>
+
+</ul>
+<h2 id="dependencies-2">Dependencies</h2>
+<p>None </p>
+
+</div>
+</div>
+</section>
+</div>
+<footer class="sticky">
+<div class="columns">
+<div class="column" style="width:95%;">
+<p>For complete document on <strong>X-CUBE-FREERTOS</strong>, visit:<a
+href="https://www.st.com/en/embedded-software/x-cube-freertos.html">www.st.com/x-cube-freertos</a></p>
+</div><div class="column" style="width:5%;">
+<p><abbr title="Based on template cx566953 version 2.0"></abbr></p>
+</div>
+</div>
+</footer>
+</body>
+</html>

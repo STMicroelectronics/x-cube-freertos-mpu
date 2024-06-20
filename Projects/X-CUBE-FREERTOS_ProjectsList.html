@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>X-CUBE-FREERTOS_ProjectsList</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../_htmresc/mini-st_2020.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div class="row">
+<div class="col-sm-12 col-lg-8">
+<center>
+<p>Copyright © 2024 STMicroelectronics<br />
+</p>
+<a href="https://www.st.com" class="logo"><img src="../_htmresc/st_logo_2020.png" alt="ST logo" /></a>
+</center>
+<h2 id="x-cube-freertos-freertos-software-applications-list"><b>X-CUBE-FREERTOS-MPU FreeRTOS Software applications list</b></h2>
+<p>The X-CUBE-FREERTOS-MPU package comes with a rich set of applications running on STMicroelectronics boards,</p>
+<p>organized by board and provided with preconfigured projects for the main supported toolchains</p>
+<p>Projects are structured as follows:</p>
+<center>
+<img src="../_htmresc/FreeRTOS_Project_Structure.png" width="60%" height="40%"/>
+</center>
+
+<h2 id="applications"><b>STM32MP135C-DK Applications</b></h2>
+<table>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 43%" />
+<col style="width: 38%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Applications</th>
+<th>Short Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>FreeRTOS_Semaphore</td>
+<td>This application creates two threads that toggle LEDs through a shared semaphore. <a href="./STM32MP135C-DK/Applications/FreeRTOS/FreeRTOS_Semaphore/README.md">more …</a></td>
+</tr>
+<tr class="even">
+<td>FreeRTOS_TaskCreation</td>
+<td>This application creates two threads with the same priority, which execute in a periodic cycle of 15 seconds. <a href="./STM32MP135C-DK/Applications/FreeRTOS/FreeRTOS_TaskCreation/README.md">more …</a></td>
+</tr>
+</table>
+
+<h3 id="notes"><b>Notes</b></h3>
+<ol type="1">
+<li>The FreeRTOS heap size configTOTAL_HEAP_SIZE defined in FreeRTOSConfig.h is set accordingly to the OS resources memory requirements of the application with +10% margin and rounded to the upper Kbyte boundary. For more details about FreeRTOS implementation on STM32Cube, please refer to UM1722 “Developing Applications on STM32Cube with RTOS”.</li>
+<li>When used with the MPU, FreeRTOS requires various regions to be defined in the linker file.
+For more information, refer to the linker files in the example as well as the FreeRTOS Documentation/Blog:
+<ul></ul>
+<a href ="https://freertos.org/2020/04/using-freertos-on-armv8-m-microcontrollers.html#FREERTOS_WITH_MPU"<em>https://freertos.org/2020/04/using-freertos-on-armv8-m-microcontrollers.html#FREERTOS_WITH_MPU</em></a>
+<li> MPU regions are required to have a size which is a multiple of 32 bytes and to be aligned on the 32 byte boundary. In particular, unprivileged task stacks must comply with these requirements.</li>
+<li>FreeRTOS uses the Systick as time base, thus it is mandatory that the HAL uses a separate time base through the TIM IPs.</li>
+</li>
+</ol>
+</div>
+</body>
+</html>
