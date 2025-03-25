@@ -4,7 +4,7 @@
 
 With FreeRTOS complementing the extensive STM32Cube ecosystem providing free development tools, software bricks, and software expansion packages, STM32 users can also leverage the rich services of FreeRTOS which meet the needs of tiny, smart, connected devices.
 
-**X-CUBE-FREERTOS** (FreeRTOS RTOS Software Expansion for STM32Cube) provides a full integration of **FreeRTOS** in the STM32Cube environment for the STM32CUBEMP13 series of microprocessors. Ready-to-run applicative examples are also provided for the *STM32MP135F_DK* thus **reducing the learning curve** and ensuring a **smooth application development experience** with FreeRTOS RTOS and STM32CubeMP13 MPU.
+**X-CUBE-FREERTOS** (FreeRTOS RTOS Software Expansion for STM32Cube) provides a full integration of **FreeRTOS** in the STM32Cube environment for the STM32CUBEMP13 series of microprocessors. Ready-to-run applicative examples are also provided for the *STM32MP135F_DK* thus **reducing the learning curve** and ensuring a **smooth application development experience** with FreeRTOS RTOS and STM32CubeMP13 MPU V1.1.0. After STM32CubeMP13 MPU V1.1.0, FreeRTOS RTOS is directly integrated in STM32CubeMP13 firmware.
 
 ![](_htmresc/OverviewFreeRTOS_in_STM32Cube.png)
 
